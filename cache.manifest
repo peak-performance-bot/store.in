@@ -1,0 +1,19 @@
+CACHE MANIFEST
+# v1.0 : 15-02-2025
+
+CACHE:
+# styles
+assets/css/bootstrap.min.css
+assets/css/plugins/owl-carousel/owl.carousel.css
+assets/css/plugins/fancybox/fancybox.min.css
+
+
+#scripts
+assets/js/jquery.min.js
+assets/js/jput.min.js
+assets/js/bootstrap.bundle.min.js
+assets/js/jquery.hoverIntent.min.js
+assets/js/jquery.waypoints.min.js
+assets/js/superfish.min.js
+assets/js/owl.carousel.min.js
+assets/js/fancybox.min.js
