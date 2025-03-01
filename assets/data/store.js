@@ -2,59 +2,62 @@
 $(document).ready(function () {
     var category = [
         {
-
             "id": "mortise-door-handle-locks",
             "text": "Mortise Door Handle Locks",
-            "class": "mortise-door-handle-locks",
+            "className": "mortise-door-handle-locks",
             "href": "mortise-door-handle-locks.html",
-            "footer": true,
+            "footer": true
         },
         {
             "id": "bathroom-accessories",
             "text": "Bathroom Accessories",
-            "class": "bathroom-accessories",
+            "className": "bathroom-accessories",
             "href": "bathroom-accessories.html",
             "footer": true
         },
         {
             "id": "modular-kitchen-accessories",
             "text": "Modular Kitchen Accessories",
-            "class": "modular-kitchen-accessories",
+            "className": "modular-kitchen-accessories",
             "href": "modular-kitchen-accessories.html",
             "footer": true
         },
         {
             "id": "door-pull-handles",
             "text": "Door Pull Handles",
-            "class": "door-pull-handles",
+            "className": "door-pull-handles",
             "href": "door-pull-handles.html",
             "footer": true
         },
         {
             "id": "wardrobe-accessories",
             "text": "Wardrobe Accessories",
-            "class": "wardrobe-accessories",
+            "className": "wardrobe-accessories",
             "href": "wardrobe-accessories.html",
             "footer": true
         },
         {
             "id": "zula-fittings",
             "text": "Zula Fittings",
-            "class": "zula-fittings",
+            "className": "zula-fittings",
             "href": "zula-fittings.html",
             "footer": false
         },
         {
             "id": "smart-door-locks",
             "text": "Smart Door Locks",
-            "class": "smart-door-locks",
+            "className": "smart-door-locks",
             "href": "smart-door-locks.html",
             "footer": false
         }
     ];
 
-    jPut.menu.data = category;
-    jPut.trendy.data = category;
-    jPut.recent.data = category;
-    jPut.footer_popular.data = category.filter(x=> x.footer === true);
+    function PageViewModel() {
+        
+        this.category = ko.observableArray(category);
+        this.popular = ko.observableArray(category.filter(x=> x.footer === true));
+
+        
+    }
+    ko.applyBindings(new PageViewModel());
 });

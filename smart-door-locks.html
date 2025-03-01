@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="cache.manifest">
 
 <head>
     <meta charset="UTF-8">
@@ -79,18 +79,8 @@
                                             <div class="col-md-6">
                                                 <div class="menu-col">
                                                     <div class="menu-title">Product Lists</div><!-- End .menu-title -->
-                                                    <ul>
-                                                        <li><a href="mortise-door-handle-locks.html">Mortise Door Handle
-                                                                Locks</a></li>
-                                                        <li><a href="bathroom-accessories.html">Bathroom Accessories</a>
-                                                        </li>
-                                                        <li><a href="modular-kitchen-accessories.html">Modular Kitchen
-                                                                Accessories</a></li>
-                                                        <li><a href="door-pull-handles.html">Door Pull Handles</a></li>
-                                                        <li><a href="wardrobe-accessories.html">Wardrobe Accessories</a>
-                                                        </li>
-                                                        <li><a href="zula-fittings.html">Zula Fittings</a></li>
-                                                        <li><a href="smart-door-locks.html">Smart Door Locks</a></li>
+                                                    <ul data-bind="foreach: category">
+                                                        <li><a data-bind="attr: { href: href }, text: text"></a></li>
                                                     </ul>
                                                 </div><!-- End .menu-col -->
                                             </div><!-- End .col-md-6 -->
@@ -139,100 +129,27 @@
             <div class="page-content">
                 <div class="container mt-5">
                     <div class="products">
-                        <div class="row">
+                        <div class="row" data-bind="foreach: products">
                             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                                 <div class="product">
-                                    <figure class="product-media" style="border:2px solid #0E143F;">
+                                    <figure class="product-media">
                                         <a href="#">
-                                            <img src="assets/images/shop/smart-door-locks/fingerprint-door-lock.jpg"
-                                                alt="Fingerprint Smart Door Lock image" class="product-image">
+                                            <img data-bind="attr: { src: 'assets/images/shop/smart-door-locks' + src, alt: name + ' image' }" class="product-image"/>
                                         </a>
-
                                         <div class="product-action action-icon-top">
                                             <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Fingerprint Smart Door Lock"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
+                                                href="#product-description-popup" data-fancybox data-bind="attr: { 'data-id': name }">
+                                                <span>quick view</span>
+                                            </a>
+                                        </div>
+                                    </figure>
                                     <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Fingerprint Smart Door Lock </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media" style="border:2px solid #0E143F;">
-                                        <a href="#">
-                                            <img src="assets/images/shop/smart-door-locks/video-door-lock.jpg"
-                                                alt="Video Call Smart Door Lock image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Video Call Smart Door Lock"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Video Call Smart Door Lock </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media" style="border:2px solid #0E143F;">
-                                        <a href="#">
-                                            <img src="assets/images/shop/smart-door-locks/face-door-lock.jpg"
-                                                alt="Face Detection Smart Door Lock image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Face Detection Smart Door Lock"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Face Detection Smart Door Lock </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media" style="border:2px solid #0E143F;">
-                                        <a href="#">
-                                            <img src="assets/images/shop/smart-door-locks/fingerprint-drawer-lock.jpg"
-                                                alt="Fingerprint Smart Drawer Lock image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Fingerprint Smart Drawer Lock"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Fingerprint Smart Drawer Lock </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                        </div><!-- End .row -->
+                                        <h3 class="product-title text-center"><a href="#" data-bind="text: name"></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .row -->
                     </div><!-- End .products -->
 
                 </div><!-- End .container -->
@@ -340,14 +257,10 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="widget">
                                 <h4 class="widget-title">Popular Products</h4><!-- End .widget-title -->
-
-                                <ul class="widget-list">
-                                    <li><a href="mortise-door-handle-locks.html">Mortise Door Handle Locks</a></li>
-                                    <li><a href="bathroom-accessories.html">Bathroom Accessories</a></li>
-                                    <li><a href="modular-kitchen-accessories.html">Modular Kitchen Accessories</a></li>
-                                    <li><a href="door-pull-handles.html">Door Pull Handles</a></li>
-                                    <li><a href="wardrobe-accessories.html">Wardrobe Accessories</a></li>
-                                </ul><!-- End .widget-list -->
+                                <ul class="widget-list" data-bind="foreach: popular">
+                                    <li><a data-bind="attr : { href: href}, text: text"></a></li>
+                                </ul>
+                                <!-- End .widget-list -->
                             </div><!-- End .widget -->
                         </div><!-- End .col-sm-6 col-lg-3 -->
 
@@ -446,8 +359,10 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
     <script src="assets/js/fancybox.min.js"></script>
+    <script src="assets/js/knockout.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/data/smart-door-locks.js"></script>
 </body>
 </html>
 <!--==popup-start==-->

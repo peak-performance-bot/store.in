@@ -90,8 +90,8 @@
                                             <div class="col-md-6">
                                                 <div class="menu-col">
                                                     <div class="menu-title">Product Lists</div><!-- End .menu-title -->
-                                                    <ul jput="menu">
-                                                        <li><a href="{{json.href}}">{{json.text}}</a></li>
+                                                    <ul data-bind="foreach: category">
+                                                        <li><a data-bind="attr: { href: href }, text: text"></a></li>
                                                     </ul>
                                                     <!--<ul>
                                                         <li><a href="mortise-door-handle-locks.html">Mortise Door Handle
@@ -280,11 +280,11 @@
                 <div class="heading heading-center mb-3">
                     <h2 class="title-lg">Trending Products</h2><!-- End .title -->
 
-                    <ul jput="trendy" class="nav nav-pills justify-content-center" role="tablist">
+                    <ul class="nav nav-pills justify-content-center" role="tablist" data-bind="foreach: category">
                         <li class="nav-item">
-                            <a class="nav-link {{json.class}}" id="trendy-{{json.id}}-link" data-toggle="tab"
-                                href="#trendy-{{json.id}}-tab" role="tab" aria-controls="trendy-{{json.id}}-tab"
-                                aria-selected="false">{{json.text}}</a>
+                            <a class="nav-link"
+                                data-bind="css: className, text: text, attr: { 'id' : 'trendy-' + id +'-link', href : '#trendy-' + id +'-tab', 'aria-controls': '#trendy-' + id +'-tab' }"
+                                data-toggle="tab" role="tab" aria-selected="false"></a>
                         </li>
                     </ul>
 
@@ -1574,11 +1574,12 @@
                 <div class="heading heading-center mb-6">
                     <h2 class="title">Recent Arrivals</h2><!-- End .title -->
 
-                    <ul jput="recent" class="nav nav-pills nav-border-anim justify-content-center" role="tablist">
+                    <ul class="nav nav-pills nav-border-anim justify-content-center" role="tablist"
+                        data-bind="foreach: category">
                         <li class="nav-item">
-                            <a class="nav-link {{json.class}}" id="top-{{json.id}}-link" data-toggle="tab"
-                                href="#top-{{json.id}}-tab" role="tab" aria-controls="top-{{json.id}}-tab"
-                                aria-selected="true">{{json.text}}</a>
+                            <a class="nav-link"
+                                data-bind="css: className, text: text, attr: { 'id' : 'top-' + id +'-link', href : '#top-' + id +'-tab', 'aria-controls': '#top-' + id +'-tab' }"
+                                data-toggle="tab" role="tab" aria-selected="true"></a>
                         </li>
                     </ul>
                 </div><!-- End .heading -->
@@ -2861,8 +2862,8 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="widget">
                                 <h4 class="widget-title">Popular Products</h4><!-- End .widget-title -->
-                                <ul jput="footer_popular" class="widget-list">
-                                    <li><a href="{{json.href}}">{{json.text}}</a></li>
+                                <ul class="widget-list" data-bind="foreach: popular">
+                                    <li><a data-bind="attr : { href: href}, text: text"></a></li>
                                 </ul>
                                 <!-- End .widget-list -->
                             </div><!-- End .widget -->
@@ -2959,7 +2960,6 @@
 
     <!-- Plugins JS File -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jput.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.hoverIntent.min.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
@@ -2967,9 +2967,10 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
     <script src="assets/js/fancybox.min.js"></script>
+    <script src="assets/js/knockout.js"></script>
     <!-- Main JS File -->
-    <script src="assets/data/store.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/data/store.js"></script>
 </body>
 
 </html>

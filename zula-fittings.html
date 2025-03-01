@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="cache.manifest">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,18 +78,8 @@
                                             <div class="col-md-6">
                                                 <div class="menu-col">
                                                     <div class="menu-title">Product Lists</div><!-- End .menu-title -->
-                                                    <ul>
-                                                        <li><a href="mortise-door-handle-locks.html">Mortise Door Handle
-                                                                Locks</a></li>
-                                                        <li><a href="bathroom-accessories.html">Bathroom Accessories</a>
-                                                        </li>
-                                                        <li><a href="modular-kitchen-accessories.html">Modular Kitchen
-                                                                Accessories</a></li>
-                                                        <li><a href="door-pull-handles.html">Door Pull Handles</a></li>
-                                                        <li><a href="wardrobe-accessories.html">Wardrobe Accessories</a>
-                                                        </li>
-                                                        <li><a href="zula-fittings.html">Zula Fittings</a></li>
-                                                        <li><a href="smart-door-locks.html">Smart Door Locks</a></li>
+                                                    <ul data-bind="foreach: category">
+                                                        <li><a data-bind="attr: { href: href }, text: text"></a></li>
                                                     </ul>
                                                 </div><!-- End .menu-col -->
                                             </div><!-- End .col-md-6 -->
@@ -138,508 +128,27 @@
             <div class="page-content">
                 <div class="container mt-5">
                     <div class="products">
-                        <div class="row">
+                        <div class="row" data-bind="foreach: products">
                             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                                 <div class="product">
                                     <figure class="product-media">
                                         <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-1.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0001) image"
-                                                class="product-image">
+                                            <img data-bind="attr: { src: 'assets/images/shop/zula-fittings' + src, alt: name + ' image' }" class="product-image"/>
                                         </a>
-
                                         <div class="product-action action-icon-top">
                                             <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0001)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
+                                                href="#product-description-popup" data-fancybox data-bind="attr: { 'data-id': name }">
+                                                <span>quick view</span>
+                                            </a>
+                                        </div>
+                                    </figure>
                                     <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0001) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-2.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0002) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0002)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0002) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-3.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0003) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0003)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0003) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-4.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0004) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0004)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0004) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-5.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0005) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0005)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0005) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-6.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0006) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0006)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0006) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-7.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0007) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0007)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0007) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-8.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0008) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0008)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0008) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-9.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0009) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0009)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0009) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-10.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0010) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0010)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0010) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-11.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0011) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0011)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0011) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-12.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0012) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0012)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0012) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-13.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0013) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0013)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0013) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-14.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0014) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0014)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0014) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-15.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0015) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0015)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0015) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-16.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0016) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0016)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0016) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-17.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0017) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0017)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0017) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-18.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0018) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0018)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0018) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-19.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0019) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0019)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0019) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/zula-fittings/zula-fittings-20.jpg"
-                                                alt="Traditional Zula Fittings (SKU: ZF0020) image"
-                                                class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Traditional Zula Fittings (SKU: ZF0020)"><span>quick
-                                                    view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center">
-                                            <a href="#">
-                                                Traditional Zula Fittings <br>(SKU: ZF0020) </a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                        </div><!-- End .row -->
+                                        <h3 class="product-title text-center"><a href="#" data-bind="text: name"></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .row -->
                     </div><!-- End .products -->
 
                 </div><!-- End .container -->
@@ -747,14 +256,10 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="widget">
                                 <h4 class="widget-title">Popular Products</h4><!-- End .widget-title -->
-
-                                <ul class="widget-list">
-                                    <li><a href="mortise-door-handle-locks.html">Mortise Door Handle Locks</a></li>
-                                    <li><a href="bathroom-accessories.html">Bathroom Accessories</a></li>
-                                    <li><a href="modular-kitchen-accessories.html">Modular Kitchen Accessories</a></li>
-                                    <li><a href="door-pull-handles.html">Door Pull Handles</a></li>
-                                    <li><a href="wardrobe-accessories.html">Wardrobe Accessories</a></li>
-                                </ul><!-- End .widget-list -->
+                                <ul class="widget-list" data-bind="foreach: popular">
+                                    <li><a data-bind="attr : { href: href}, text: text"></a></li>
+                                </ul>
+                                <!-- End .widget-list -->
                             </div><!-- End .widget -->
                         </div><!-- End .col-sm-6 col-lg-3 -->
 
@@ -853,8 +358,10 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
     <script src="assets/js/fancybox.min.js"></script>
+    <script src="assets/js/knockout.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/data/zula-fittings.js"></script>
 </body>
 </html>
 <!--==popup-start==-->

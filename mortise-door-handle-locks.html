@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="cache.manifest">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
         content="Door Handle Locks Manufacturer in Ahmedabad, Mortise Door Handle Locks Ahmedabad, Door Handle Locks Distributor in Ahmedabad">
     <meta name="description"
         content="Find here best door handle locks of premium quality at best price in ahmedabad. We have mortise door handle locks ahmedabad for elegant & modern doors. Buy Door handle locks online from us.">
-    
+
     <meta property="og:title"
         content="Hardware Accessories Manufacturer in Ahmedabad | Best Hardware Company in Ahmedabad">
     <meta property="og:description"
@@ -38,7 +38,7 @@
     <meta name="msapplication-TileColor" content="#cc9966">
     <meta name="msapplication-config" content="#">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!-- Plugins CSS File -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
@@ -73,24 +73,13 @@
                                 </li>
                                 <li class="m3">
                                     <a href="#">Shop</a>
-
                                     <div class="megamenu megamenu-sm">
                                         <div class="row no-gutters">
                                             <div class="col-md-6">
                                                 <div class="menu-col">
                                                     <div class="menu-title">Product Lists</div><!-- End .menu-title -->
-                                                    <ul>
-                                                        <li><a href="mortise-door-handle-locks.html">Mortise Door Handle
-                                                                Locks</a></li>
-                                                        <li><a href="bathroom-accessories.html">Bathroom Accessories</a>
-                                                        </li>
-                                                        <li><a href="modular-kitchen-accessories.html">Modular Kitchen
-                                                                Accessories</a></li>
-                                                        <li><a href="door-pull-handles.html">Door Pull Handles</a></li>
-                                                        <li><a href="wardrobe-accessories.html">Wardrobe Accessories</a>
-                                                        </li>
-                                                        <li><a href="zula-fittings.html">Zula Fittings</a></li>
-                                                        <li><a href="smart-door-locks.html">Smart Door Locks</a></li>
+                                                    <ul data-bind="foreach: category">
+                                                        <li><a data-bind="attr: { href: href }, text: text"></a></li>
                                                     </ul>
                                                 </div><!-- End .menu-col -->
                                             </div><!-- End .col-md-6 -->
@@ -139,743 +128,27 @@
             <div class="page-content">
                 <div class="container mt-5">
                     <div class="products">
-                        <div class="row">
+                        <div class="row" id="ct1" data-bind="foreach: products">
                             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                                 <div class="product">
                                     <figure class="product-media">
                                         <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/125-SS/125-SS-1.jpg"
-                                                alt="A-125 S.S Matt Finish image" class="product-image">
+                                            <img data-bind="attr: { src: 'assets/images/shop/mortise-door-handle-locks' + src, alt: name + ' image' }" class="product-image"/>
                                         </a>
-
                                         <div class="product-action action-icon-top">
                                             <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-125 S.S Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
+                                                href="#product-description-popup" data-fancybox data-bind="attr: { 'data-id': name }">
+                                                <span>quick view</span>
+                                            </a>
+                                        </div>
+                                    </figure>
                                     <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-125 S.S Matt Finish</a></h3>
-                                        <!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/125-Black/125-Black-1.jpg"
-                                                alt="A-125 Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-125 Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-125 Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/125-Brass/125-Brass-1.jpg"
-                                                alt="A-125 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-125 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-125 Brass Antique Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/126-SS/126-SS-1.jpg"
-                                                alt="A-126 S.S Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-126 S.S Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-126 S.S Matt Finish</a></h3>
-                                        <!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/126-Black/126-Black-1.jpg"
-                                                alt="A-126 Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-126 Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-126 Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/126-Brass/126-Brass-1.jpg"
-                                                alt="A-126 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-126 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-126 Brass Antique Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/127-SS/127-SS-1.jpg"
-                                                alt="A-127 S.S Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-127 S.S Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-127 S.S Matt Finish</a></h3>
-                                        <!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/127-Black/127-Black-1.jpg"
-                                                alt="A-127 Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-127 Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-127 Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/127-Brass/127-Brass-1.jpg"
-                                                alt="A-127 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-127 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-127 Brass Antique Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/139-SS/139-SS-1.jpg"
-                                                alt="A-139 S.S Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-139 S.S Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-139 S.S Matt Finish</a></h3>
-                                        <!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/139-Black/139-Black-1.jpg"
-                                                alt="A-139 Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-139 Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-139 Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/139-Brass/139-Brass-1.jpg"
-                                                alt="A-139 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-139 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-139 Brass Antique Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/148-SS/148-SS-1.jpg"
-                                                alt="A-148 S.S Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-148 S.S Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-148 S.S Matt Finish</a></h3>
-                                        <!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/148-Black/148-Black-1.jpg"
-                                                alt="A-148 Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-148 Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-148 Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/148-Brass/148-Brass-1.jpg"
-                                                alt="A-148 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-148 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-148 Brass Antique Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/276-SS/276-SS-1.jpg"
-                                                alt="A-276 S.S Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-276 S.S Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-276 S.S Matt Finish</a></h3>
-                                        <!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/276-Black/276-Black-1.jpg"
-                                                alt="A-276 Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-276 Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-276 Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/276-Brass/276-Brass-1.jpg"
-                                                alt="A-276 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-276 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-276 Brass Antique Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/153-SS/153-SS-1.jpg"
-                                                alt="A-153 S.S Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-153 S.S Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-153 S.S Matt Finish</a></h3>
-                                        <!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/153-Black/153-Black-1.jpg"
-                                                alt="A-153 Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-153 Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-153 Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/153-Brass/153-Brass-1.jpg"
-                                                alt="A-153 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-153 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-153 Brass Antique Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/7072-SS/7072-SS-1.jpg"
-                                                alt="A-7072 S.S Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-7072 S.S Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-7072 S.S Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/7072-Black/7072-Black-1.jpg"
-                                                alt="A-7072 Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-7072 Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-7072 Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/7072-Brass/7072-Brass-1.jpg"
-                                                alt="A-7072 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-7072 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-7072 Brass Antique
-                                                Finish</a></h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/7073-Black/7073-Black-1.jpg"
-                                                alt="A-7073 Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-7073 Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-7073 Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/7073-Brass/7073-Brass-1.jpg"
-                                                alt="A-7073 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-7073 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-7073 Brass Antique
-                                                Finish</a></h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/151-Black/151-Black-1.jpg"
-                                                alt="A-151 Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-151 Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-151 Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/151-Brass/151-Brass-1.jpg"
-                                                alt="A-151 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-151 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-151 Brass Antique Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/136-SS/136-SS-1.jpg"
-                                                alt="A-136 S.S Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-136 S.S Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-136 S.S Matt Finish</a></h3>
-                                        <!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/136-Black/136-Black-1.jpg"
-                                                alt="A-136 Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-136 Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-136 Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/136-Brass/136-Brass-1.jpg"
-                                                alt="A-136 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-136 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-136 Brass Antique Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/152-SS/152-SS-1.jpg"
-                                                alt="A-152 S.S Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-152 S.S Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-152 S.S Matt Finish</a></h3>
-                                        <!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/152-Brass/152-Brass-1.jpg"
-                                                alt="A-152 Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="A-152 Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">A-152 Brass Antique Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/Round-Black/Round-Black-1.jpg"
-                                                alt="Round Z Black Matt Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Round Z Black Matt Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">Round Z Black Matt Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="product">
-                                    <figure class="product-media">
-                                        <a href="#">
-                                            <img src="assets/images/shop/mortise-door-handle-locks/Round-Brass/Round-Brass-1.jpg"
-                                                alt="Round Brass Antique Finish image" class="product-image">
-                                        </a>
-
-                                        <div class="product-action action-icon-top">
-                                            <a class="btn-product btn-quickview proQuick navbar-button-popup openmodal"
-                                                href="#product-description-popup" data-fancybox
-                                                data-id="Round Brass Antique Finish"><span>quick view</span></a>
-                                        </div><!-- End .product-action -->
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <h3 class="product-title text-center"><a href="#">Round Brass Antique Finish</a>
-                                        </h3><!-- End .product-title -->
-                                    </div><!-- End .product-body -->
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 col-xl-3 -->
-                        </div><!-- End .row -->
+                                        <h3 class="product-title text-center"><a href="#" data-bind="text: name"></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .row -->
                     </div><!-- End .products -->
 
                 </div><!-- End .container -->
@@ -983,14 +256,10 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="widget">
                                 <h4 class="widget-title">Popular Products</h4><!-- End .widget-title -->
-
-                                <ul class="widget-list">
-                                    <li><a href="mortise-door-handle-locks.html">Mortise Door Handle Locks</a></li>
-                                    <li><a href="bathroom-accessories.html">Bathroom Accessories</a></li>
-                                    <li><a href="modular-kitchen-accessories.html">Modular Kitchen Accessories</a></li>
-                                    <li><a href="door-pull-handles.html">Door Pull Handles</a></li>
-                                    <li><a href="wardrobe-accessories.html">Wardrobe Accessories</a></li>
-                                </ul><!-- End .widget-list -->
+                                <ul class="widget-list" data-bind="foreach: popular">
+                                    <li><a data-bind="attr : { href: href}, text: text"></a></li>
+                                </ul>
+                                <!-- End .widget-list -->
                             </div><!-- End .widget -->
                         </div><!-- End .col-sm-6 col-lg-3 -->
 
@@ -1020,7 +289,8 @@
                     <p class="footer-copyright">© 2025 Peak Performance Hardware. All Rights Reserved.</p>
                     <!-- End .footer-copyright -->
                     <p class="footer-payments">Made With <i class="icon-heart" style="color: #0E143F;"></i> in India By
-                        <a href="https://www.mrweb.co.in/" style="color: #0E143F;" target="_blank">Mr.Bot</a></p>
+                        <a href="https://www.mrweb.co.in/" style="color: #0E143F;" target="_blank">Mr.Bot</a>
+                    </p>
                     <!-- End .footer-copyright -->
                 </div><!-- End .container -->
             </div><!-- End .footer-bottom -->
@@ -1082,6 +352,7 @@
 
     <!-- Plugins JS File -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jput.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.hoverIntent.min.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
@@ -1089,9 +360,14 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
     <script src="assets/js/fancybox.min.js"></script>
+    <script src="assets/js/knockout.js"></script>
     <!-- Main JS File -->
+
+    
     <script src="assets/js/main.js"></script>
+    <script src="assets/data/mortise-door-handle-locks.js"></script>
 </body>
+
 </html>
 <!--==popup-start==-->
 <div id="product-description-popup" class="fancybox-content-popup proDesc">

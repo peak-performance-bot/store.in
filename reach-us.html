@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="cache.manifest">
 
 <head>
     <meta charset="UTF-8">
@@ -79,18 +79,8 @@
                                             <div class="col-md-6">
                                                 <div class="menu-col">
                                                     <div class="menu-title">Product Lists</div><!-- End .menu-title -->
-                                                    <ul>
-                                                        <li><a href="mortise-door-handle-locks.html">Mortise Door Handle
-                                                                Locks</a></li>
-                                                        <li><a href="bathroom-accessories.html">Bathroom Accessories</a>
-                                                        </li>
-                                                        <li><a href="modular-kitchen-accessories.html">Modular Kitchen
-                                                                Accessories</a></li>
-                                                        <li><a href="door-pull-handles.html">Door Pull Handles</a></li>
-                                                        <li><a href="wardrobe-accessories.html">Wardrobe Accessories</a>
-                                                        </li>
-                                                        <li><a href="zula-fittings.html">Zula Fittings</a></li>
-                                                        <li><a href="smart-door-locks.html">Smart Door Locks</a></li>
+                                                    <ul data-bind="foreach: category">
+                                                        <li><a data-bind="attr: { href: href }, text: text"></a></li>
                                                     </ul>
                                                 </div><!-- End .menu-col -->
                                             </div><!-- End .col-md-6 -->
@@ -265,14 +255,10 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="widget">
                                 <h4 class="widget-title">Popular Products</h4><!-- End .widget-title -->
-
-                                <ul class="widget-list">
-                                    <li><a href="mortise-door-handle-locks.html">Mortise Door Handle Locks</a></li>
-                                    <li><a href="bathroom-accessories.html">Bathroom Accessories</a></li>
-                                    <li><a href="modular-kitchen-accessories.html">Modular Kitchen Accessories</a></li>
-                                    <li><a href="door-pull-handles.html">Door Pull Handles</a></li>
-                                    <li><a href="wardrobe-accessories.html">Wardrobe Accessories</a></li>
-                                </ul><!-- End .widget-list -->
+                                <ul class="widget-list" data-bind="foreach: popular">
+                                    <li><a data-bind="attr : { href: href}, text: text"></a></li>
+                                </ul>
+                                <!-- End .widget-list -->
                             </div><!-- End .widget -->
                         </div><!-- End .col-sm-6 col-lg-3 -->
 
@@ -372,8 +358,10 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
     <script src="assets/js/fancybox.min.js"></script>
+    <script src="assets/js/knockout.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/data/store.js"></script>
 </body>
 </html>
 <script>
