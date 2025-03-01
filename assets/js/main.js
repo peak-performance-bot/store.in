@@ -1,4 +1,80 @@
 // Main Js File
+
+var category = [
+    {
+        "id": "mortise-door-handle-locks",
+        "text": "Mortise Door Handle Locks",
+        "className": "mortise-door-handle-locks",
+        "href": "mortise-door-handle-locks.html",
+        "footer": true
+    },
+    {
+        "id": "bathroom-accessories",
+        "text": "Bathroom Accessories",
+        "className": "bathroom-accessories",
+        "href": "bathroom-accessories.html",
+        "footer": true
+    },
+    {
+        "id": "modular-kitchen-accessories",
+        "text": "Modular Kitchen Accessories",
+        "className": "modular-kitchen-accessories",
+        "href": "modular-kitchen-accessories.html",
+        "footer": true
+    },
+    {
+        "id": "door-pull-handles",
+        "text": "Door Pull Handles",
+        "className": "door-pull-handles",
+        "href": "door-pull-handles.html",
+        "footer": true
+    },
+    {
+        "id": "wardrobe-accessories",
+        "text": "Wardrobe Accessories",
+        "className": "wardrobe-accessories",
+        "href": "wardrobe-accessories.html",
+        "footer": true
+    },
+    {
+        "id": "zula-fittings",
+        "text": "Zula Fittings",
+        "className": "zula-fittings",
+        "href": "zula-fittings.html",
+        "footer": false
+    },
+    {
+        "id": "smart-door-locks",
+        "text": "Smart Door Locks",
+        "className": "smart-door-locks",
+        "href": "smart-door-locks.html",
+        "footer": false
+    }
+];
+
+var footer = {
+    sitelogo: "assets/images/site-logo.png",
+    sociallinks: [
+        { href: "https://www.facebook.com/", title: "Facebook", className: "icon-facebook-f" },
+        { href: "https://www.instagram.com/", title: "Instagram", className: "icon-instagram" },
+        { href: "https://in.pinterest.com/", title: "Pinterest", className: "icon-pinterest" },
+        { href: "https://www.linkedin.com/", title: "LinkedIn", className: "icon-linkedin" }
+    ],
+    usefullinks: [
+        { href: "know-us.html", text: "About Peak Performance Hardware" },
+        { href: "reach-us.html", text: "Get In Touch" },
+        { href: "#", text: "Terms & Conditions" },
+        { href: "#", text: "Privacy Policy" }
+    ],
+    popularlinks: category.filter(x=> x.footer === true),
+    reachus : [
+        { href: "mailto:peakperformance51@gmail.com", text: "peakperformance51@gmail.com", className: "icon-envelope" },
+        { href: "tel:+919327533407", text: "+91 93275 33407", className: "icon-phone" },
+        { href: "https://maps.app.goo.gl/oKi5bv24UpbSUsoX8", text: "104, Kavisha amara, Nr. Auda Auditorium, 150ft, Main Road, Shela, Ahmedabad, Gujarat 380058", className: "icon-map-marker" }
+    ],
+    copyright: "© 2025 Peak Performance Hardware. All Rights Reserved."
+};
+
 $(document).ready(function () {
     'use strict';
 
@@ -785,4 +861,7 @@ $(document).ready(function () {
             }, 500)
         }, 900)
     }
+
+
+    
 });

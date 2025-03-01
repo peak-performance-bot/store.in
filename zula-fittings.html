@@ -217,83 +217,57 @@
 
         </main><!-- End .main -->
 
-        <footer class="footer">
+        <footer class="footer" data-bind="with: footer">
             <div class="footer-middle">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-lg-3">
                             <div class="widget widget-about">
-                                <img src="assets/images/site-logo.png" class="footer-logo" alt="Footer Logo" width="200"
-                                    height="75">
-                                <!--<p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </p>-->
-
-                                <div class="social-icons">
-                                    <a href="https://www.facebook.com/" class="social-icon" title="Facebook"
-                                        target="_blank"><i class="icon-facebook-f"></i></a>
-                                    <a href="https://www.instagram.com/" class="social-icon" title="Instagram"
-                                        target="_blank"><i class="icon-instagram"></i></a>
-                                    <a href="https://in.pinterest.com/" class="social-icon" title="Pinterest"
-                                        target="_blank"><i class="icon-pinterest"></i></a>
-                                    <a href="https://www.linkedin.com/" class="social-icon" title="LinkedIn"
-                                        target="_blank"><i class="icon-linkedin"></i></a>
-                                </div><!-- End .soial-icons -->
-                            </div><!-- End .widget about-widget -->
-                        </div><!-- End .col-sm-6 col-lg-3 -->
-
+                                <img data-bind="attr: { src: sitelogo }" class="footer-logo" alt="Footer Logo" width="200" height="75">
+                                <div class="social-icons" data-bind="foreach: sociallinks">
+                                    <a class="social-icon" data-bind="attr: { href: href, title: title }" target="_blank">
+                                        <i data-bind="css: className"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-sm-6 col-lg-3">
                             <div class="widget">
-                                <h4 class="widget-title">Useful Links</h4><!-- End .widget-title -->
-
-                                <ul class="widget-list">
-                                    <li><a href="know-us.html">About Peak Performance Hardware</a></li>
-                                    <li><a href="reach-us.html">Get In Touch</a></li>
-                                    <li><a href="#">Terms & Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                </ul><!-- End .widget-list -->
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 col-lg-3 -->
-
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="widget">
-                                <h4 class="widget-title">Popular Products</h4><!-- End .widget-title -->
-                                <ul class="widget-list" data-bind="foreach: popular">
-                                    <li><a data-bind="attr : { href: href}, text: text"></a></li>
+                                <h4 class="widget-title">Useful Links</h4>
+                                <ul class="widget-list" data-bind="foreach: usefullinks">
+                                    <li><a data-bind="attr: { href: href }, text: text"></a></li>
                                 </ul>
-                                <!-- End .widget-list -->
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 col-lg-3 -->
-
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">Popular Products</h4>
+                                <ul class="widget-list" data-bind="foreach: popularlinks">
+                                    <li><a data-bind="attr: { href: href }, text: text"></a></li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="col-sm-6 col-lg-3">
                             <div class="widget">
                                 <h4 class="widget-title">Reach Us</h4><!-- End .widget-title -->
-
-                                <ul class="widget-list">
-                                    <li><i class="icon-envelope">&nbsp;</i><a
-                                            href="mailto:peakperformance51@gmail.com">peakperformance51@gmail.com</a>
+                                <ul class="widget-list" data-bind="foreach: reachus">
+                                    <li>
+                                        <i data-bind="css: className">&nbsp;</i>
+                                        <a data-bind="attr: { href: href }, text: text" target="_blank"></a>
                                     </li>
-                                    <li><i class="icon-phone">&nbsp;</i><a href="tel:+919327533407">+91 93275 33407</a>
-                                    </li>
-                                    <li><i class="icon-map-marker">&nbsp;</i><a
-                                            href="https://maps.app.goo.gl/oKi5bv24UpbSUsoX8" target="_blank">104,
-                                            Kavisha amara, Nr. Auda Auditorium, 150ft, Main Road, Shela, Ahmedabad,
-                                            Gujarat 380058</a></li>
-                                </ul><!-- End .widget-list -->
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 col-lg-3 -->
-                    </div><!-- End .row -->
-                </div><!-- End .container -->
-            </div><!-- End .footer-middle -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="footer-bottom">
                 <div class="container">
-                    <p class="footer-copyright">© 2025 Peak Performance Hardware. All Rights Reserved.</p>
-                    <!-- End .footer-copyright -->
-                    <p class="footer-payments">Made With <i class="icon-heart" style="color: #0E143F;"></i> in India By
-                        <a href="https://www.mrweb.co.in/" style="color: #0E143F;" target="_blank">Mr.Bot</a></p>
-                    <!-- End .footer-copyright -->
-                </div><!-- End .container -->
-            </div><!-- End .footer-bottom -->
-        </footer><!-- End .footer -->
+                    <p class="footer-copyright" data-bind="text: copyright"></p>
+                </div>
+            </div>
+        </footer>
     </div><!-- End .page-wrapper -->
     <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
 
