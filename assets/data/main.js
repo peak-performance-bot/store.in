@@ -13,49 +13,63 @@ var category = [
         "text": "Mortise Door Handle Locks",
         "className": "mortise-door-handle-locks",
         "href": "mortise-door-handle-locks.html",
-        "footer": true
+        "footer": true,
+        "knowus": true,
+        "src": "assets/images/shop/Door-Lock-Handle.jpg"
     },
     {
         "id": "bathroom-accessories",
         "text": "Bathroom Accessories",
         "className": "bathroom-accessories",
         "href": "bathroom-accessories.html",
-        "footer": true
+        "footer": true,
+        "knowus": true,
+        "src": "assets/images/shop/Bathroom-Accessories.jpg"
     },
     {
         "id": "modular-kitchen-accessories",
         "text": "Modular Kitchen Accessories",
         "className": "modular-kitchen-accessories",
         "href": "modular-kitchen-accessories.html",
-        "footer": true
+        "footer": true,
+        "knowus": true,
+        "src": "assets/images/shop/Kitchen-Accessories.jpg"
     },
     {
         "id": "door-pull-handles",
         "text": "Door Pull Handles",
         "className": "door-pull-handles",
         "href": "door-pull-handles.html",
-        "footer": true
+        "footer": true,
+        "knowus": true,
+        "src": "assets/images/shop/Door-Pull-Handle.jpg"
     },
     {
         "id": "wardrobe-accessories",
         "text": "Wardrobe Accessories",
         "className": "wardrobe-accessories",
         "href": "wardrobe-accessories.html",
-        "footer": true
+        "footer": true,
+        "knowus": true,
+        "src": "assets/images/shop/Wardrobe-Accessories.jpg"
     },
     {
         "id": "zula-fittings",
         "text": "Zula Fittings",
         "className": "zula-fittings",
         "href": "zula-fittings.html",
-        "footer": false
+        "footer": false,
+        "knowus": true,
+        "src": "assets/images/shop/Zula-Fittings.jpg"
     },
     {
         "id": "smart-door-locks",
         "text": "Smart Door Locks",
         "className": "smart-door-locks",
         "href": "smart-door-locks.html",
-        "footer": false
+        "footer": false,
+        "knowus": false,
+        "src": ""
     }
 ];
 
