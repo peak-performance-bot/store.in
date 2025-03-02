@@ -1982,7 +1982,7 @@ blockquote {
   top: 0;
   bottom: 0;
   z-index: 1001;
-  background-color: #333;
+  background-color: lightslategray;
   width: 100%;
   max-width: 280px;
   overflow-y: scroll;
@@ -12954,7 +12954,7 @@ button:focus {
 /*--------------------- 5.9.Contact -------------------- */
 /* Contact us */
 #map {
-  height: 280px;
+  /*height: 280px;*/
   background-color: #ccc; }
 
 .gm-style .gm-style-iw-c {

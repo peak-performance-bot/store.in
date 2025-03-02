@@ -1,16 +1,104 @@
 // Main Js File
+
+var sociallinks = [
+    { href: "https://www.facebook.com/", title: "Facebook", className: "icon-facebook-f" },
+    { href: "https://www.instagram.com/", title: "Instagram", className: "icon-instagram" },
+    { href: "https://in.pinterest.com/", title: "Pinterest", className: "icon-pinterest" },
+    { href: "https://www.linkedin.com/", title: "LinkedIn", className: "icon-linkedin" }
+];
+
+var category = [
+    {
+        "id": "mortise-door-handle-locks",
+        "text": "Mortise Door Handle Locks",
+        "className": "mortise-door-handle-locks",
+        "href": "mortise-door-handle-locks.html",
+        "footer": true
+    },
+    {
+        "id": "bathroom-accessories",
+        "text": "Bathroom Accessories",
+        "className": "bathroom-accessories",
+        "href": "bathroom-accessories.html",
+        "footer": true
+    },
+    {
+        "id": "modular-kitchen-accessories",
+        "text": "Modular Kitchen Accessories",
+        "className": "modular-kitchen-accessories",
+        "href": "modular-kitchen-accessories.html",
+        "footer": true
+    },
+    {
+        "id": "door-pull-handles",
+        "text": "Door Pull Handles",
+        "className": "door-pull-handles",
+        "href": "door-pull-handles.html",
+        "footer": true
+    },
+    {
+        "id": "wardrobe-accessories",
+        "text": "Wardrobe Accessories",
+        "className": "wardrobe-accessories",
+        "href": "wardrobe-accessories.html",
+        "footer": true
+    },
+    {
+        "id": "zula-fittings",
+        "text": "Zula Fittings",
+        "className": "zula-fittings",
+        "href": "zula-fittings.html",
+        "footer": false
+    },
+    {
+        "id": "smart-door-locks",
+        "text": "Smart Door Locks",
+        "className": "smart-door-locks",
+        "href": "smart-door-locks.html",
+        "footer": false
+    }
+];
+
+var menu = {
+    links : [
+        { href: "index.html", text: "Home", className: "m1", child: false, menu: [] },
+        { href: "know-us.html", text: "Know Us", className: "m2", child: false, menu: [] },
+        { href: "#", text: "Shop", className: "m3", child: true, menu: category },
+        { href: "reach-us.html", text: "Reach Us", className: "m4", child: false, menu: [] },
+    ],
+    sociallinks: sociallinks,
+};
+
+var footer = {
+    sitelogo: "assets/images/site-logo.png",
+    sociallinks: sociallinks,
+    usefullinks: [
+        { href: "know-us.html", text: "About Peak Performance Hardware" },
+        { href: "reach-us.html", text: "Get In Touch" },
+        { href: "#", text: "Terms & Conditions" },
+        { href: "#", text: "Privacy Policy" }
+    ],
+    popularlinks: category.filter(x => x.footer === true),
+    reachus: [
+        { href: "mailto:peakperformance51@gmail.com", text: "peakperformance51@gmail.com", className: "icon-envelope" },
+        { href: "tel:+919327533407", text: "+91 93275 33407", className: "icon-phone" },
+        { href: "https://maps.app.goo.gl/oKi5bv24UpbSUsoX8", text: "104, Kavisha amara, Nr. Auda Auditorium, 150ft, Main Road, Shela, Ahmedabad, Gujarat 380058", className: "icon-map-marker" }
+    ],
+    copyright: "© 2025 Peak Performance Hardware. All Rights Reserved."
+};
+
 $(document).ready(function () {
     'use strict';
 
     owlCarousels();
-    quantityInputs();
+    //quantityInputs();
 
     // Header Search Toggle
-
+   
     var $searchWrapper = $('.header-search-wrapper'),
         $body = $('body'),
         $searchToggle = $('.search-toggle');
-
+    /*
     $searchToggle.on('click', function (e) {
         $searchWrapper.toggleClass('show');
         $(this).toggleClass('active');
@@ -24,15 +112,15 @@ $(document).ready(function () {
             $searchToggle.removeClass('active');
             $body.removeClass('is-search-active');
         }
-    });
+    });*/
 
-    $('.header-search').on('click', function (e) {
+    /*$('.header-search').on('click', function (e) {
         e.stopPropagation();
-    });
+    });*/
 
     // Sticky header 
-    var catDropdown = $('.category-dropdown'),
-        catInitVal = catDropdown.data('visible');
+    /*var catDropdown = $('.category-dropdown'),
+        catInitVal = catDropdown.data('visible');*/
 
     if ($('.sticky-header').length && $(window).width() >= 992) {
         var sticky = new Waypoint.Sticky({
@@ -41,7 +129,7 @@ $(document).ready(function () {
             offset: -300,
             handler: function (direction) {
                 // Show category dropdown
-                if (catInitVal && direction == 'up') {
+                /*if (catInitVal && direction == 'up') {
                     catDropdown.addClass('show').find('.dropdown-menu').addClass('show');
                     catDropdown.find('.dropdown-toggle').attr('aria-expanded', 'true');
                     return false;
@@ -51,13 +139,13 @@ $(document).ready(function () {
                 if (catDropdown.hasClass('show')) {
                     catDropdown.removeClass('show').find('.dropdown-menu').removeClass('show');
                     catDropdown.find('.dropdown-toggle').attr('aria-expanded', 'false');
-                }
+                }*/
             }
         });
     }
 
     // Menu init with superfish plugin
-    if ($.fn.superfish) {
+    /*if ($.fn.superfish) {
         $('.menu, .menu-vertical').superfish({
             popUpSelector: 'ul, .megamenu',
             hoverClass: 'show',
@@ -66,10 +154,10 @@ $(document).ready(function () {
             speedOut: 80,
             autoArrows: true
         });
-    }
+    }*/
 
     // Mobile Menu Toggle - Show & Hide
-    $('.mobile-menu-toggler').on('click', function (e) {
+    /*$('.mobile-menu-toggler').on('click', function (e) {
         $body.toggleClass('mmenu-active');
         $(this).toggleClass('active');
         e.preventDefault();
@@ -79,21 +167,22 @@ $(document).ready(function () {
         $body.removeClass('mmenu-active');
         $('.menu-toggler').removeClass('active');
         e.preventDefault();
-    });
+    });*/
 
     // Add Mobile menu icon arrows to items with children
     $('.mobile-menu').find('li').each(function () {
         var $this = $(this);
 
-        if ($this.find('ul').length) {
+        /*if ($this.find('ul').length) {
             $('<span/>', {
                 'class': 'mmenu-btn'
             }).appendTo($this.children('a'));
-        }
+        }*/
     });
 
     // Mobile Menu toggle children menu
-    $('.mmenu-btn').on('click', function (e) {
+    /*$('.mmenu-btn').on('click', function (e) {
+        debugger;
         var $parent = $(this).closest('li'),
             $targetUl = $parent.find('ul').eq(0);
 
@@ -106,12 +195,12 @@ $(document).ready(function () {
                 $parent.removeClass('open');
             });
         }
-
         e.stopPropagation();
         e.preventDefault();
-    });
+    });*/
 
     // Sidebar Filter - Show & Hide
+    /*
     var $sidebarToggler = $('.sidebar-toggler');
     $sidebarToggler.on('click', function (e) {
         $body.toggleClass('sidebar-filter-active');
@@ -123,17 +212,17 @@ $(document).ready(function () {
         $body.removeClass('sidebar-filter-active');
         $sidebarToggler.removeClass('active');
         e.preventDefault();
-    });
+    });*/
 
     // Clear All checkbox/remove filters in sidebar filter
-    $('.sidebar-filter-clear').on('click', function (e) {
+    /*$('.sidebar-filter-clear').on('click', function (e) {
         $('.sidebar-shop').find('input').prop('checked', false);
 
         e.preventDefault();
-    });
+    });*/
 
     // Popup - Iframe Video - Map etc.
-    if ($.fn.magnificPopup) {
+    /*if ($.fn.magnificPopup) {
         $('.btn-iframe').magnificPopup({
             type: 'iframe',
             removalDelay: 600,
@@ -141,9 +230,10 @@ $(document).ready(function () {
             fixedContentPos: false,
             closeBtnInside: false
         });
-    }
+    }*/
 
     // Product hover
+    /*
     if ($.fn.hoverIntent) {
         $('.product-3').hoverIntent(function () {
             var $this = $(this),
@@ -159,9 +249,10 @@ $(document).ready(function () {
             $this.find('.product-footer').css({ 'visibility': 'hidden', 'transform': 'translateY(100%)' });
             $this.find('.product-body').css('transform', 'translateY(0)');
         });
-    }
+    }*/
 
     // Slider For category pages / filter price
+    /*
     if (typeof noUiSlider === 'object') {
         var priceSlider = document.getElementById('price-slider');
 
@@ -189,9 +280,10 @@ $(document).ready(function () {
         priceSlider.noUiSlider.on('update', function (values, handle) {
             $('#filter-price-range').text(values.join(' - '));
         });
-    }
+    }*/
 
     // Product countdown
+    /*
     if ($.fn.countdown) {
         $('.product-countdown').each(function () {
             var $this = $(this),
@@ -230,10 +322,10 @@ $(document).ready(function () {
 
         // Pause
         // $('.product-countdown').countdown('pause');
-    }
+    }*/
 
     // Quantity Input - Cart page - Product Details pages
-    function quantityInputs() {
+    /*function quantityInputs() {
         if ($.fn.inputSpinner) {
             $("input[type='number']").inputSpinner({
                 decrementButton: '<i class="icon-minus"></i>',
@@ -243,16 +335,16 @@ $(document).ready(function () {
                 buttonsWidth: '26px'
             });
         }
-    }
+    }*/
 
     // Sticky Content - Sidebar - Social Icons etc..
     // Wrap elements with <div class="sticky-content"></div> if you want to make it sticky
-    if ($.fn.stick_in_parent && $(window).width() >= 992) {
+    /*if ($.fn.stick_in_parent && $(window).width() >= 992) {
         $('.sticky-content').stick_in_parent({
             offset_top: 80,
             inner_scrolling: false
         });
-    }
+    }*/
 
     function owlCarousels($wrap, options) {
         if ($.fn.owlCarousel) {
@@ -288,6 +380,7 @@ $(document).ready(function () {
     }
 
     // Product Image Zoom plugin - product pages
+    /*
     if ($.fn.elevateZoom) {
         $('#product-zoom').elevateZoom({
             gallery: 'product-zoom-gallery',
@@ -326,10 +419,10 @@ $(document).ready(function () {
                 e.preventDefault();
             }
         });
-    }
+    }*/
 
     // Product Gallery - product-gallery.html 
-    if ($.fn.owlCarousel && $.fn.elevateZoom) {
+    /*if ($.fn.owlCarousel && $.fn.elevateZoom) {
         var owlProductGallery = $('.product-gallery-carousel');
 
         owlProductGallery.on('initialized.owl.carousel', function () {
@@ -381,19 +474,21 @@ $(document).ready(function () {
                 responsive: true
             });
         });
-    }
+    }*/
 
     // Product Gallery Separeted- product-sticky.html 
     if ($.fn.elevateZoom) {
+        /*
         $('.product-separated-item').find('img').elevateZoom({
             zoomType: "inner",
             cursor: "crosshair",
             zoomWindowFadeIn: 400,
             zoomWindowFadeOut: 400,
             responsive: true
-        });
+        });*/
 
         // Create Array for gallery popup
+        /*
         var galleryArr = [];
         $('.product-gallery-separated').find('img').each(function () {
             var $this = $(this),
@@ -419,11 +514,11 @@ $(document).ready(function () {
 
                 e.preventDefault();
             }
-        });
+        });*/
     }
 
     // Checkout discount input - toggle label if input is empty etc...
-    $('#checkout-discount-input').on('focus', function () {
+    /*$('#checkout-discount-input').on('focus', function () {
         // Hide label on focus
         $(this).parent('form').find('label').css('opacity', 0);
     }).on('blur', function () {
@@ -435,18 +530,19 @@ $(document).ready(function () {
         } else {
             $this.parent('form').find('label').css('opacity', 1);
         }
-    });
+    });*/
 
     // Dashboard Page Tab Trigger
-    $('.tab-trigger-link').on('click', function (e) {
+    /*$('.tab-trigger-link').on('click', function (e) {
         var targetHref = $(this).attr('href');
 
         $('.nav-dashboard').find('a[href="' + targetHref + '"]').trigger('click');
 
         e.preventDefault();
-    });
+    });*/
 
     // Masonry / Grid layout fnction
+    /*
     var layoutInit = function (container, selector, space) {
         $(container).each(function () {
             var $this = $(this);
@@ -479,9 +575,9 @@ $(document).ready(function () {
             $this.closest('li').addClass('active');
             e.preventDefault();
         });
-    }
+    }*/
 
-    /* Masonry / Grid Layout & Isotope Filter for blog/portfolio etc... */
+    /*
     if (typeof imagesLoaded === 'function' && $.fn.isotope) {
         // Portfolio
         $('.portfolio-container').imagesLoaded(function () {
@@ -514,8 +610,9 @@ $(document).ready(function () {
         });
 
         layoutInit('.grid', '.grid-item', '.grid-space');
-    }
+    }*/
 
+    /*
     // Count
     var $countItem = $('.count');
     if ($.fn.countTo) {
@@ -537,8 +634,9 @@ $(document).ready(function () {
                 countValue = $this.data('to');
             $this.text(countValue);
         });
-    }
+    }*/
 
+    /*
     // Scroll To button
     var $scrollTo = $('.scroll-to');
     // If button scroll elements exists
@@ -556,10 +654,10 @@ $(document).ready(function () {
                 e.preventDefault();
             }
         });
-    }
+    }*/
 
     // Review tab/collapse show + scroll to tab
-    $('#review-link').on('click', function (e) {
+    /*$('#review-link').on('click', function (e) {
         var target = $(this).attr('href'),
             $target = $(target);
 
@@ -578,7 +676,7 @@ $(document).ready(function () {
         }
 
         e.preventDefault();
-    });
+    });*/
 
     // Scroll Top Button - Show
     var $scrollTop = $('#scroll-top');
@@ -600,7 +698,7 @@ $(document).ready(function () {
     });
 
     // Google Map api v3 - Map for contact pages
-    if (document.getElementById("map") && typeof google === "object") {
+    /*if (document.getElementById("map") && typeof google === "object") {
 
         var content = '<address>' +
             '88 Pine St,<br>' +
@@ -635,21 +733,21 @@ $(document).ready(function () {
                 infowindow.open(map, marker);
             }
         })(marker));
-    }
+    }*/
 
-    var $viewAll = $('.view-all-demos');
+    /*var $viewAll = $('.view-all-demos');
     $viewAll.on('click', function (e) {
         e.preventDefault();
         $('.demo-item.hidden').addClass('show');
         $(this).addClass('disabled-hidden');
-    })
+    })*/
 
-    var $megamenu = $('.megamenu-container .sf-with-ul');
+    /*var $megamenu = $('.megamenu-container .sf-with-ul');
     $megamenu.hover(function () {
         $('.demo-item.show').addClass('hidden');
         $('.demo-item.show').removeClass('show');
         $viewAll.removeClass('disabled-hidden');
-    });
+    });*/
 
     // Product quickView popup
     /*$('.btn-quickview').on('click', function (e) {
@@ -695,12 +793,13 @@ $(document).ready(function () {
             e.preventDefault();
         }
     });*/
-    $('body').on('click', '.carousel-dot', function () {
+
+    /*$('body').on('click', '.carousel-dot', function () {
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
-    });
+    });*/
 
-    $('body').on('click', '.btn-fullscreen', function (e) {
+    /*$('body').on('click', '.btn-fullscreen', function (e) {
         var galleryArr = [];
         $(this).parents('.owl-stage-outer').find('.owl-item:not(.cloned)').each(function () {
             var $this = $(this).find('img'),
@@ -755,9 +854,9 @@ $(document).ready(function () {
         }, 500);
 
         e.preventDefault();
-    });
+    });*/
 
-    if (document.getElementById('newsletter-popup-form')) {
+    /*if (document.getElementById('newsletter-popup-form')) {
         setTimeout(function () {
             var mpInstance = $.magnificPopup.instance;
             if (mpInstance.isOpen) {
@@ -784,5 +883,5 @@ $(document).ready(function () {
                 });
             }, 500)
         }, 900)
-    }
+    }*/
 });
