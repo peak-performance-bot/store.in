@@ -49,7 +49,7 @@
 
 <body>
     <div class="page-wrapper">
-        <header class="header">
+        <header class="header" data-bind="with: menu">
             <div class="header-middle sticky-header">
                 <div class="container">
                     <div class="header-left">
@@ -57,62 +57,45 @@
                             <span class="sr-only">Toggle mobile menu</span>
                             <i class="icon-bars"></i>
                         </button>
-
                         <a href="index.html" class="logo">
-                            <img src="assets/images/site-logo.png" alt="Peak Performance Hardware Logo" width="175"
-                                height="50">
+                            <img src="assets/images/site-logo.png" alt="Peak Performance Hardware Logo" width="175" height="50">
                         </a>
-
                         <nav class="main-nav">
-                            <ul class="menu sf-arrows">
-                                <li class="m1">
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li class="m2">
-                                    <a href="know-us.html">Know Us</a>
-                                </li>
-                                <li class="m3">
-                                    <a href="#">Shop</a>
-
+                            <ul class="menu sf-arrows" data-bind="foreach: links">
+                                <li data-bind="css: className">
+                                    <a data-bind="attr: { href: href }, text: text"></a>
+                                    <!-- ko if: child -->
                                     <div class="megamenu megamenu-sm">
                                         <div class="row no-gutters">
                                             <div class="col-md-6">
                                                 <div class="menu-col">
-                                                    <div class="menu-title">Product Lists</div><!-- End .menu-title -->
-                                                    <ul data-bind="foreach: category">
+                                                    <div class="menu-title">Product Lists</div>
+                                                    <ul data-bind="foreach: menu">
                                                         <li><a data-bind="attr: { href: href }, text: text"></a></li>
                                                     </ul>
-                                                </div><!-- End .menu-col -->
-                                            </div><!-- End .col-md-6 -->
-
+                                                </div>
+                                            </div>
                                             <div class="col-md-6">
                                                 <div class="banner banner-overlay">
                                                     <a href="#">
                                                         <img src="assets/images/menu/banner-2.jpg" alt="Banner">
-
                                                         <div class="banner-content banner-content-bottom">
-                                                            <div class="banner-title text-white">New
-                                                                Trends<br><span><strong>2025</strong></span></div>
-                                                            <!-- End .banner-title -->
-                                                        </div><!-- End .banner-content -->
+                                                            <div class="banner-title text-white">New Trends<br><span><strong>2025</strong></span></div>
+                                                        </div>
                                                     </a>
-                                                </div><!-- End .banner -->
-                                            </div><!-- End .col-md-6 -->
-                                        </div><!-- End .row -->
-                                    </div><!-- End .megamenu megamenu-sm -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /ko -->
                                 </li>
-                                <!--<li class="m5">
-                                <a href="our-presence.php">Our Presence</a>
-                            </li> -->
-                                <li class="m4">
-                                    <a href="reach-us.html">Reach Us</a>
-                                </li>
-                            </ul><!-- End .menu -->
-                        </nav><!-- End .main-nav -->
-                    </div><!-- End .header-left -->
-                </div><!-- End .container -->
-            </div><!-- End .header-middle -->
-        </header><!-- End .header -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
         <style>
             .product-details-action .btn-cart:before {
                 display: none;
