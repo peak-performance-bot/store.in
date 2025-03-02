@@ -17,3 +17,13 @@ assets/js/superfish.min.js
 assets/js/owl.carousel.min.js
 assets/js/fancybox.min.js
 assets/js/knockout.js
+
+assets/data/bathroom-accessories.js
+assets/data/door-pull-handles.js
+assets/data/main.js
+assets/data/modular-kitchen-accessories.js
+assets/data/mortise-door-handle-locks.js
+assets/data/smart-door-locks.js
+assets/data/store.js
+assets/data/wardrobe-accessories.js
+assets/data/zula-fittings.js
