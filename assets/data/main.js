@@ -74,7 +74,7 @@ var category = [
 ];
 
 var menu = {
-    links : [
+    links: [
         { href: "index.html", text: "Home", className: "m1", child: false, menu: [] },
         { href: "know-us.html", text: "Know Us", className: "m2", child: false, menu: [] },
         { href: "#", text: "Shop", className: "m3", child: true, menu: category },
@@ -108,7 +108,7 @@ $(document).ready(function () {
     //quantityInputs();
 
     // Header Search Toggle
-   
+
     var $searchWrapper = $('.header-search-wrapper'),
         $body = $('body'),
         $searchToggle = $('.search-toggle');
