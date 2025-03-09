@@ -75,7 +75,7 @@ var category = [
 
 var menu = {
     links: [
-        { href: "index.html", text: "Home", className: "m1", child: false, menu: [] },
+        { href: "/", text: "Home", className: "m1", child: false, menu: [] },
         { href: "know-us.html", text: "Know Us", className: "m2", child: false, menu: [] },
         { href: "#", text: "Shop", className: "m3", child: true, menu: category },
         { href: "reach-us.html", text: "Reach Us", className: "m4", child: false, menu: [] },
